@@ -103,5 +103,3 @@ python3 run_evaluation.py \
 Results are written to `eval_results/` as:
 - `evaluation_report.csv`
 - `evaluation_report.pdf`
-
-#requirements_eval.txt
