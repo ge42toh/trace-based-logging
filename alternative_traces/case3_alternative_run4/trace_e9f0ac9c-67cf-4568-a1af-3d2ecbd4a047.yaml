@@ -1,0 +1,272 @@
+---
+log:
+  namespaces:
+    stream: https://cpee.org/datastream/
+    ssn: http://www.w3.org/ns/ssn/
+    sosa: http://www.w3.org/ns/sosa/
+  xes:
+    creator: cpee.org
+    features: nested-attributes
+  extension:
+    time: http://www.xes-standard.org/time.xesext
+    concept: http://www.xes-standard.org/concept.xesext
+    id: http://www.xes-standard.org/identity.xesext
+    lifecycle: http://www.xes-standard.org/lifecycle.xesext
+    cpee: http://cpee.org/cpee.xesext
+  global:
+    trace:
+      concept:name: __NOTSPECIFIED__
+      cpee:name: __NOTSPECIFIED__
+    event:
+      concept:instance: -1
+      id:id: __NOTSPECIFIED__
+      cpee:instance: __NOTSPECIFIED__
+      lifecycle:transition: complete
+      time:timestamp: ''
+  trace:
+    concept:name: '77539'
+    cpee:name: case_03_exclusive_choice
+    cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: description/change
+  time:timestamp: '2026-06-09T09:28:57.402467+02:00'
+  lifecycle:transition: unknown
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: state/change
+  time:timestamp: '2026-06-09T09:28:58.082889+02:00'
+  lifecycle:transition: unknown
+  cpee:state: ready
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: attributes/change
+  time:timestamp: '2026-06-09T09:28:58.206056+02:00'
+  lifecycle:transition: unknown
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: attributes/change
+  time:timestamp: '2026-06-09T09:28:58.850942+02:00'
+  lifecycle:transition: unknown
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: state/change
+  time:timestamp: '2026-06-09T09:28:59.488412+02:00'
+  lifecycle:transition: unknown
+  cpee:state: ready
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: state/change
+  time:timestamp: '2026-06-09T09:28:59.523858+02:00'
+  lifecycle:transition: unknown
+  cpee:state: ready
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: state/change
+  time:timestamp: '2026-06-09T09:29:11.909854+02:00'
+  lifecycle:transition: unknown
+  cpee:state: running
+---
+event:
+  concept:instance: 77539
+  id:id: a1
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/calling
+  time:timestamp: '2026-06-09T09:29:11.911913+02:00'
+  lifecycle:transition: start
+  cpee:activity: a1
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 4bcaaa78a255e08135a734deb8afdf10
+  data:
+  - name: timeout
+    value: null
+  - name: data
+    value: null
+---
+event:
+  concept:instance: 77539
+  id:id: a1
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/annotation
+  time:timestamp: '2026-06-09T09:29:11.912223+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a1
+  cpee:activity_uuid: 4bcaaa78a255e08135a734deb8afdf10
+---
+event:
+  concept:instance: 77539
+  id:id: a1
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/receiving
+  time:timestamp: '2026-06-09T09:29:11.930196+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a1
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 4bcaaa78a255e08135a734deb8afdf10
+  data:
+  - name: result
+    mimetype: application/json
+    data: '{}'
+---
+event:
+  concept:instance: 77539
+  id:id: a1
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/done
+  time:timestamp: '2026-06-09T09:29:11.931318+02:00'
+  lifecycle:transition: complete
+  cpee:activity: a1
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 4bcaaa78a255e08135a734deb8afdf10
+---
+event:
+  concept:instance: 77539
+  id:id: e_1_2_1
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: gateway/decide
+  time:timestamp: '2026-06-09T09:29:11.941393+02:00'
+  lifecycle:transition: unknown
+  data:
+    condition: true
+---
+event:
+  concept:instance: 77539
+  id:id: e_1_2_1
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: gateway/annotation
+  time:timestamp: '2026-06-09T09:29:11.942923+02:00'
+  lifecycle:transition: unknown
+---
+event:
+  concept:instance: 77539
+  id:id: a2
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/calling
+  time:timestamp: '2026-06-09T09:29:11.943359+02:00'
+  lifecycle:transition: start
+  cpee:activity: a2
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: edd0f39e0243543bcfbe8643865c27dd
+  data:
+  - name: timeout
+    value: null
+  - name: data
+    value: null
+---
+event:
+  concept:instance: 77539
+  id:id: a2
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/annotation
+  time:timestamp: '2026-06-09T09:29:11.943456+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a2
+  cpee:activity_uuid: edd0f39e0243543bcfbe8643865c27dd
+---
+event:
+  concept:instance: 77539
+  id:id: a2
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/receiving
+  time:timestamp: '2026-06-09T09:29:11.950100+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a2
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: edd0f39e0243543bcfbe8643865c27dd
+  data:
+  - name: result
+    mimetype: application/json
+    data: '{}'
+---
+event:
+  concept:instance: 77539
+  id:id: a2
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/done
+  time:timestamp: '2026-06-09T09:29:11.950440+02:00'
+  lifecycle:transition: complete
+  cpee:activity: a2
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: edd0f39e0243543bcfbe8643865c27dd
+---
+event:
+  concept:instance: 77539
+  id:id: a4
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/calling
+  time:timestamp: '2026-06-09T09:29:11.951309+02:00'
+  lifecycle:transition: start
+  cpee:activity: a4
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 7815bd42afa6670a699076d334a1bb5a
+  data:
+  - name: timeout
+    value: null
+  - name: data
+    value: null
+---
+event:
+  concept:instance: 77539
+  id:id: a4
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/annotation
+  time:timestamp: '2026-06-09T09:29:11.951406+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a4
+  cpee:activity_uuid: 7815bd42afa6670a699076d334a1bb5a
+---
+event:
+  concept:instance: 77539
+  id:id: a4
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/receiving
+  time:timestamp: '2026-06-09T09:29:11.957640+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a4
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 7815bd42afa6670a699076d334a1bb5a
+  data:
+  - name: result
+    mimetype: application/json
+    data: '{}'
+---
+event:
+  concept:instance: 77539
+  id:id: a4
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: activity/done
+  time:timestamp: '2026-06-09T09:29:11.957900+02:00'
+  lifecycle:transition: complete
+  cpee:activity: a4
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 7815bd42afa6670a699076d334a1bb5a
+---
+event:
+  concept:instance: 77539
+  id:id: external
+  cpee:instance: e9f0ac9c-67cf-4568-a1af-3d2ecbd4a047
+  cpee:lifecycle:transition: state/change
+  time:timestamp: '2026-06-09T09:29:11.958610+02:00'
+  lifecycle:transition: unknown
+  cpee:state: finished

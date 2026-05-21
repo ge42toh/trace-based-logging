@@ -1,0 +1,135 @@
+---
+log:
+  namespaces:
+    stream: https://cpee.org/datastream/
+    ssn: http://www.w3.org/ns/ssn/
+    sosa: http://www.w3.org/ns/sosa/
+  xes:
+    creator: cpee.org
+    features: nested-attributes
+  extension:
+    time: http://www.xes-standard.org/time.xesext
+    concept: http://www.xes-standard.org/concept.xesext
+    id: http://www.xes-standard.org/identity.xesext
+    lifecycle: http://www.xes-standard.org/lifecycle.xesext
+    cpee: http://cpee.org/cpee.xesext
+  global:
+    trace:
+      concept:name: __NOTSPECIFIED__
+      cpee:name: __NOTSPECIFIED__
+    event:
+      concept:instance: -1
+      id:id: __NOTSPECIFIED__
+      cpee:instance: __NOTSPECIFIED__
+      lifecycle:transition: complete
+      time:timestamp: ''
+  trace:
+    concept:name: '77654'
+    cpee:name: case_10_nested_loop
+    cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+---
+event:
+  concept:instance: 77654
+  id:id: e2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: gateway/decide
+  time:timestamp: '2026-06-09T19:52:46.394292+02:00'
+  lifecycle:transition: unknown
+  data:
+    condition: true
+---
+event:
+  concept:instance: 77654
+  id:id: e2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: gateway/annotation
+  time:timestamp: '2026-06-09T19:52:46.394639+02:00'
+  lifecycle:transition: unknown
+---
+event:
+  concept:instance: 77654
+  id:id: a2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: activity/calling
+  time:timestamp: '2026-06-09T19:52:46.395355+02:00'
+  lifecycle:transition: start
+  cpee:activity: a2
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 814332b44b9ec34160fb04b5f338863b
+  data:
+  - name: timeout
+    value: null
+  - name: data
+    value: null
+---
+event:
+  concept:instance: 77654
+  id:id: a2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: activity/annotation
+  time:timestamp: '2026-06-09T19:52:46.395662+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a2
+  cpee:activity_uuid: 814332b44b9ec34160fb04b5f338863b
+---
+event:
+  concept:instance: 77654
+  id:id: a2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: activity/receiving
+  time:timestamp: '2026-06-09T19:52:46.405960+02:00'
+  lifecycle:transition: unknown
+  cpee:activity: a2
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 814332b44b9ec34160fb04b5f338863b
+  data:
+  - name: result
+    mimetype: application/json
+    data: '{}'
+---
+event:
+  concept:instance: 77654
+  id:id: a2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: activity/done
+  time:timestamp: '2026-06-09T19:52:46.415205+02:00'
+  lifecycle:transition: complete
+  cpee:activity: a2
+  concept:endpoint: https://cpee.org/services/timeout.php
+  cpee:activity_uuid: 814332b44b9ec34160fb04b5f338863b
+---
+event:
+  concept:instance: 77654
+  id:id: e2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: gateway/decide
+  time:timestamp: '2026-06-09T19:52:46.425756+02:00'
+  lifecycle:transition: unknown
+  data:
+    condition: false
+---
+event:
+  concept:instance: 77654
+  id:id: e2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: gateway/annotation
+  time:timestamp: '2026-06-09T19:52:46.425899+02:00'
+  lifecycle:transition: unknown
+---
+event:
+  concept:instance: 77654
+  id:id: e2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: gateway/decide
+  time:timestamp: '2026-06-09T19:52:46.464530+02:00'
+  lifecycle:transition: unknown
+  data:
+    condition: false
+---
+event:
+  concept:instance: 77654
+  id:id: e2
+  cpee:instance: ff4c94f2-b398-4274-b7ee-ac687c9c5d04_loop2_02
+  cpee:lifecycle:transition: gateway/annotation
+  time:timestamp: '2026-06-09T19:52:46.464654+02:00'
+  lifecycle:transition: unknown

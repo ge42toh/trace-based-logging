@@ -1,0 +1,183 @@
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: state/change
+  cpee:state: ready
+  time:timestamp: '2026-06-09T19:54:12.888545+02:00'
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: description/change
+  cpee:description: <description xmlns="http://cpee.org/ns/description/1.0"/>
+  time:timestamp: '2026-06-09T19:54:17.434352+02:00'
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: dataelements/change
+  data:
+  - name: outer
+    value: 0
+  - name: inner
+    value: 0
+  time:timestamp: '2026-06-09T19:54:17.438926+02:00'
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: endpoints/change
+  data:
+  - name: timeout
+    value: https://cpee.org/services/timeout.php
+  - name: subprocess
+    value: https://cpee.org/flow/start/url/
+  time:timestamp: '2026-06-09T19:54:17.440733+02:00'
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: attributes/change
+  data:
+  - name: guarded
+    value: none
+  - name: theme
+    value: extended
+  - name: guarded_id
+    value: ''
+  - name: modeltype
+    value: CPEE
+  - name: creator
+    value: Christine Ashcreek
+  - name: author
+    value: Christine Ashcreek
+  - name: info
+    value: case_10_nested_loop
+  - name: model_uuid
+    value: 69af37a8-7067-40a9-9766-9551c26d8322
+  - name: model_version
+    value: ''
+  - name: design_stage
+    value: development
+  - name: design_dir
+    value: Theses.dir/Dmitrij Wasiljev.dir
+  time:timestamp: '2026-06-09T19:54:17.444257+02:00'
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: description/change
+  cpee:description: |
+    <?xml version="1.0"?>
+    <description xmlns="http://cpee.org/ns/description/1.0">
+      <loop eid="e1" mode="pre_test" condition="data.outer&lt;=1">
+        <_annotations>
+          <_logging_behavior>
+            <_iteration>true</_iteration>
+          </_logging_behavior>
+        </_annotations>
+        <call id="a1" endpoint="timeout">
+          <parameters>
+            <label/>
+            <color/>
+            <method>:post</method>
+            <arguments>
+              <timeout/>
+              <data/>
+            </arguments>
+          </parameters>
+          <code>
+            <signal/>
+            <prepare/>
+            <finalize output="result">data.outer+=1</finalize>
+            <update output="result"/>
+            <rescue output="result"/>
+          </code>
+          <annotations>
+            <_logging_behavior>
+              <_exclude/>
+              <_include/>
+            </_logging_behavior>
+          </annotations>
+        </call>
+        <loop eid="e2" mode="pre_test" condition="data.inner&lt;=1">
+          <_annotations>
+            <_logging_behavior>
+              <_iteration>true</_iteration>
+            </_logging_behavior>
+          </_annotations>
+          <call id="a2" endpoint="timeout">
+            <parameters>
+              <label/>
+              <color/>
+              <method>:post</method>
+              <arguments>
+                <timeout/>
+                <data/>
+              </arguments>
+            </parameters>
+            <code>
+              <signal/>
+              <prepare/>
+              <finalize output="result">data.inner+=1</finalize>
+              <update output="result"/>
+              <rescue output="result"/>
+            </code>
+            <annotations>
+              <_logging_behavior>
+                <_exclude/>
+                <_include/>
+              </_logging_behavior>
+            </annotations>
+          </call>
+        </loop>
+      </loop>
+      <call id="a3" endpoint="timeout">
+        <parameters>
+          <label/>
+          <color/>
+          <method>:post</method>
+          <arguments>
+            <timeout/>
+            <data/>
+          </arguments>
+        </parameters>
+        <code>
+          <signal/>
+          <prepare/>
+          <finalize output="result"/>
+          <update output="result"/>
+          <rescue output="result"/>
+        </code>
+        <annotations>
+          <_logging_behavior>
+            <_exclude/>
+            <_include/>
+          </_logging_behavior>
+        </annotations>
+      </call>
+    </description>
+  cpee:change_uuid: 1e9c27ae438f34838d8fa10aee84834b176e2ccc
+  time:timestamp: '2026-06-09T19:54:17.450944+02:00'
+---
+event:
+  concept:instance: 77655
+  id:id: ex-ante
+  cpee:instance: 071d6f9b-5181-48df-92b5-20b6af2522de
+  lifecycle:transition: unknown
+  cpee:lifecycle:transition: state/change
+  cpee:state: ready
+  time:timestamp: '2026-06-09T19:54:17.518597+02:00'
