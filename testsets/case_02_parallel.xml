@@ -1,0 +1,111 @@
+<testset xmlns="http://cpee.org/ns/properties/2.0">
+  <executionhandler>ruby</executionhandler>
+  <dataelements/>
+  <endpoints>
+    <timeout>https://cpee.org/services/timeout.php</timeout>
+    <subprocess>https://cpee.org/flow/start/url/</subprocess>
+  </endpoints>
+  <attributes>
+    <guarded>none</guarded>
+    <theme>extended</theme>
+    <guarded_id/>
+    <modeltype>CPEE</modeltype>
+    <creator>Christine Ashcreek</creator>
+    <author>Christine Ashcreek</author>
+    <info>case_02_parallel</info>
+    <model_uuid>69af37a8-7067-40a9-9766-9551c26d8322</model_uuid>
+    <model_version/>
+    <design_stage>development</design_stage>
+    <design_dir>Theses.dir/Dmitrij Wasiljev.dir</design_dir>
+  </attributes>
+  <description>
+    <description xmlns="http://cpee.org/ns/description/1.0">
+      <call id="a1" endpoint="timeout">
+        <parameters>
+          <label/><color/>
+          <method>:post</method>
+          <arguments><timeout/><data/></arguments>
+        </parameters>
+        <code>
+          <signal/><prepare/>
+          <finalize output="result"/>
+          <update output="result"/>
+          <rescue output="result"/>
+        </code>
+        <annotations>
+          <_logging_behavior><_exclude/><_include/></_logging_behavior>
+        </annotations>
+      </call>
+      <parallel>
+        <parallel_branch>
+          <call id="a2" endpoint="timeout">
+            <parameters>
+              <label/><color/>
+              <method>:post</method>
+              <arguments><timeout/><data/></arguments>
+            </parameters>
+            <code>
+              <signal/><prepare/>
+              <finalize output="result"/>
+              <update output="result"/>
+              <rescue output="result"/>
+            </code>
+            <annotations>
+              <_logging_behavior><_exclude/><_include/></_logging_behavior>
+            </annotations>
+          </call>
+        </parallel_branch>
+        <parallel_branch>
+          <call id="a3" endpoint="timeout">
+            <parameters>
+              <label/><color/>
+              <method>:post</method>
+              <arguments><timeout/><data/></arguments>
+            </parameters>
+            <code>
+              <signal/><prepare/>
+              <finalize output="result"/>
+              <update output="result"/>
+              <rescue output="result"/>
+            </code>
+            <annotations>
+              <_logging_behavior><_exclude/><_include/></_logging_behavior>
+            </annotations>
+          </call>
+        </parallel_branch>
+      </parallel>
+      <call id="a4" endpoint="timeout">
+        <parameters>
+          <label/><color/>
+          <method>:post</method>
+          <arguments><timeout/><data/></arguments>
+        </parameters>
+        <code>
+          <signal/><prepare/>
+          <finalize output="result"/>
+          <update output="result"/>
+          <rescue output="result"/>
+        </code>
+        <annotations>
+          <_logging_behavior><_exclude/><_include/></_logging_behavior>
+        </annotations>
+      </call>
+    </description>
+  </description>
+  <transformation>
+    <description type="copy"/>
+    <dataelements type="none"/>
+    <endpoints type="none"/>
+  </transformation>
+  <subscriptions xmlns="http://riddl.org/ns/common-patterns/notifications-producer/2.0">
+    <subscription xmlns="http://riddl.org/ns/common-patterns/notifications-producer/2.0" id="_multitracelog" url="https://lehre.bpm.in.tum.de/ports/9379">
+      <topic id="state"><event>change</event></topic>
+      <topic id="activity"><event>calling</event><event>receiving</event><event>done</event><event>annotation</event></topic>
+      <topic id="description"><event>change</event><event>exposition</event></topic>
+      <topic id="endpoints"><event>change</event></topic>
+      <topic id="attributes"><event>change</event></topic>
+      <topic id="task"><event>instantiation</event></topic>
+      <topic id="gateway"><event>annotation</event><event>decide</event></topic>
+    </subscription>
+  </subscriptions>
+</testset>
